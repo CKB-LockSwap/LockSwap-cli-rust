@@ -1,0 +1,18 @@
+[package]
+name = "lockswap_cli"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+ckb-sdk = "3.1.1"
+ckb-types = "0.115.0-rc2"
+ckb-jsonrpc-types = "0.115.0-rc2"
+secp256k1 = { version = "0.24", features = ["recovery"] }
+clap = { version = "4.5.4", features = ["derive"] }
+serde = { version = "1.0.197", features = ["derive"] }
+toml = "0.8.12"
+eyre = "0.6.12"
+serde_json = "1.0.115"
+hex = "0.4.3"
